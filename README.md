@@ -14,10 +14,7 @@ Services communicate indirectly through Kafka, ensuring loose coupling and scala
 
 ## Architecture
 
-Client  
-→ Order Service (Producer)  
-→ Kafka Topic (`order-events`)  
-→ Notification Service (Consumer)
+Client → Order Service (Producer) → Kafka Topic (`order-events`) → Notification Service (Consumer)
 
 - Services do not communicate directly
 - Kafka acts as the central event broker
